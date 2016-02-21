@@ -1,10 +1,6 @@
 require_relative 'database.rb'
 require_relative 'parser.rb'
 
-task :greet do
-  puts "Hello!"
-end
-
 task :parse do
   song = Song.new
   song.parse_source('http://37.58.75.166:8384/currentsong?sid=1')
