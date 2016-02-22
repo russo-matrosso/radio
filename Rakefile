@@ -22,18 +22,3 @@ namespace :db do
     Database.run_migrations
   end
 end
-
-namespace :project do
-  desc 'Prepare initial project'
-  task :prepare do
-    Rake::Task['db:create'] unless File.exist?('db/radio.db')
-    Rake::Task['project:update']
-  end
-
-  desc 'Update project'
-  task :update do
-    `bundle install`
-    Rake::Task['db:migrate']
-    Rake::Task['update_cron']
-  end
-end
