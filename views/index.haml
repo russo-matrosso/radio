@@ -1,0 +1,7 @@
+%table
+  - @songs.all.each do |song|
+    %tr
+      %td
+        = song[:artist].split.map(&:capitalize).join(' ')
+      %td
+        = song[:title]

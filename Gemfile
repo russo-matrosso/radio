@@ -15,3 +15,6 @@ gem 'sqlite3'
 
 # Whenever gem for updating crontab automatically
 gem 'whenever', :require => false
+
+# HAML templates
+gem 'haml'
