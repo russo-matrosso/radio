@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # sinatra DSL
 gem 'sinatra'
 
+# Puma web server
+gem 'puma'
+
 # html parser
 gem 'nokogiri'
 
