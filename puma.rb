@@ -1,8 +1,10 @@
 root = "#{Dir.getwd}"
 
-activate_control_app "tcp://127.0.0.1:9293"
-bind "unix://#{root}/tmp/puma.sock"
-pidfile "#{root}/tmp/pids/puma.pid"
+bind "unix://#{root}/tmp/puma/socket"
+pidfile "#{root}/tmp/puma/pid"
+state_path "#{root}/tmp/puma/state"
 rackup "#{root}/config.ru"
-state_path "#{root}/tmp/pids/puma.state"
-daemonize true
+
+threads 4, 8
+
+activate_control_app
