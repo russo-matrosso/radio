@@ -3,3 +3,4 @@ Gemfile.lock
 .rubocop.yml
 .DS_Store
 .idea
+/tmp
