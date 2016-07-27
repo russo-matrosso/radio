@@ -21,3 +21,6 @@ gem 'whenever', :require => false
 
 # HAML templates
 gem 'haml'
+
+# Bootstrap
+gem 'sinatra-twitter-bootstrap', :require => 'sinatra/twitter-bootstrap'
