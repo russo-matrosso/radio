@@ -21,3 +21,7 @@ gem 'whenever', :require => false
 
 # HAML templates
 gem 'haml'
+
+# Console stuff
+gem 'pry'
+gem 'rake'

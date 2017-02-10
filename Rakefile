@@ -27,6 +27,11 @@ namespace :db do
   end
 end
 
+desc 'Run console'
+task :console do
+  system 'pry -r ./app.rb'
+end
+
 task :greet do
   puts 'RadioWCS parser, for all tasks print "rake -T"'
 end
